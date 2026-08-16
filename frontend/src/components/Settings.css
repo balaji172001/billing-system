@@ -1,0 +1,91 @@
+/* Settings Component Styles */
+.settings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.settings-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.settings-icon-wrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-md);
+  background: var(--cyan-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cyan);
+}
+
+.settings-card-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.settings-title-margin {
+  margin-bottom: 20px;
+}
+
+.settings-form-group-margin {
+  margin-top: 16px;
+}
+
+.settings-textarea-terms {
+  min-height: 100px;
+}
+
+.settings-subtext {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.settings-email-card {
+  border: 1px solid var(--cyan-dim);
+}
+
+.settings-email-title {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--cyan);
+}
+
+.settings-email-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.settings-text-primary {
+  color: var(--text-primary);
+}
+
+.settings-text-cyan {
+  color: var(--cyan);
+}
+
+.settings-code-env {
+  color: var(--amber);
+  background: rgba(245, 158, 11, 0.1);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+.settings-smtp-box {
+  margin-top: 12px;
+  background: var(--bg-base);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  font-size: 12px;
+  font-family: monospace;
+  color: var(--mint);
+  line-height: 1.8;
+  border: 1px solid var(--border);
+}

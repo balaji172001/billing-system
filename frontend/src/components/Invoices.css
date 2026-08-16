@@ -1,0 +1,136 @@
+/* Invoices Component Styles */
+.invoices-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.invoices-status-filter {
+  width: 160px;
+}
+
+.invoices-th-actions {
+  text-align: right;
+}
+
+.invoices-row-overdue {
+  border-left: 2px solid var(--rose);
+}
+
+.invoices-num {
+  font-weight: 700;
+  color: var(--cyan);
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.invoices-client-name {
+  font-weight: 500;
+}
+
+.invoices-text-muted {
+  color: var(--text-muted);
+}
+
+.invoices-due-overdue {
+  color: var(--rose);
+}
+
+.invoices-amount {
+  font-weight: 600;
+}
+
+.invoices-balance-due {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.invoices-balance-paid {
+  color: var(--mint);
+  font-weight: 600;
+}
+
+.invoices-actions-cell {
+  justify-content: flex-end;
+}
+
+.invoices-send-spinner {
+  width: 12px;
+  height: 12px;
+  border-width: 2px;
+}
+
+.invoices-line-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.invoices-line-label {
+  margin: 0;
+}
+
+.invoices-th-desc { width: 45%; }
+.invoices-th-qty { width: 12%; }
+.invoices-th-price { width: 18%; }
+.invoices-th-total { width: 18%; }
+.invoices-th-action { width: 7%; }
+
+.invoices-view-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--cyan);
+  letter-spacing: -0.5px;
+}
+
+.invoices-view-badge-wrap {
+  margin-top: 6px;
+}
+
+.invoices-th-right {
+  text-align: right;
+}
+
+.invoices-td-right-bold {
+  text-align: right;
+  font-weight: 600;
+}
+
+.invoices-discount-value {
+  color: var(--rose);
+}
+
+.invoices-paid-label {
+  color: var(--mint);
+}
+
+.invoices-paid-value {
+  color: var(--mint);
+}
+
+.invoices-balance-row {
+  font-weight: 700;
+}
+
+.invoices-balance-label {
+  color: var(--amber);
+}
+
+.invoices-balance-val {
+  color: var(--amber);
+}
+
+.invoices-notes-card {
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+}
+
+.invoices-notes-label {
+  margin-bottom: 6px;
+}
+
+.invoices-notes-text {
+  font-size: 13px;
+  color: var(--text-secondary);
+}

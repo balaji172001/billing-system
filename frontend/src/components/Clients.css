@@ -1,0 +1,48 @@
+/* Clients Component Styles */
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.clients-th-actions {
+  text-align: right;
+}
+
+.clients-info-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.clients-name {
+  font-weight: 600;
+}
+
+.clients-address-sub {
+  font-size: 11px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.clients-icon-cell {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-secondary);
+}
+
+.clients-text-secondary {
+  color: var(--text-secondary);
+}
+
+.clients-text-muted {
+  color: var(--text-muted);
+}
+
+.clients-actions-cell {
+  justify-content: flex-end;
+}

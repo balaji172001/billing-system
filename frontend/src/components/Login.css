@@ -1,0 +1,197 @@
+/* Login Component Styles */
+.login-container {
+  min-height: 100vh;
+  background: var(--bg-base);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-glow-orb-top {
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.login-glow-orb-bottom {
+  position: absolute;
+  bottom: 15%;
+  right: 20%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Rotating 360-degree border wrapper */
+.login-card-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  border-radius: var(--radius-xl);
+  padding: 1.5px;
+  overflow: hidden;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.7), 0 0 30px rgba(6, 182, 212, 0.15);
+}
+
+@keyframes rotateAccent {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.login-accent-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 250%;
+  height: 250%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    transparent 240deg,
+    var(--cyan) 300deg,
+    var(--violet) 330deg,
+    var(--cyan) 360deg
+  );
+  animation: rotateAccent 4s linear infinite;
+  pointer-events: none;
+  border-radius: 50%;
+}
+
+.login-card {
+  width: 100%;
+  background: var(--bg-surface);
+  border-radius: calc(var(--radius-xl) - 1.5px);
+  padding: 40px 36px;
+  position: relative;
+  z-index: 1;
+}
+
+.login-brand-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.login-brand-icon {
+  width: 52px;
+  height: 52px;
+  background: linear-gradient(135deg, var(--cyan), var(--violet));
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.35);
+  margin-bottom: 16px;
+}
+
+.login-brand-title {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  background: linear-gradient(135deg, var(--cyan), var(--violet));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+}
+
+.login-brand-subtitle {
+  font-size: 13px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.login-alert {
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-input-wrapper {
+  position: relative;
+}
+
+.login-input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.login-input-username {
+  padding-left: 36px;
+}
+
+.login-input-password {
+  padding-left: 36px;
+  padding-right: 40px;
+}
+
+.login-password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-submit-btn {
+  margin-top: 8px;
+  height: 44px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.login-spinner {
+  width: 16px;
+  height: 16px;
+  border-width: 2px;
+}
+
+.login-footer-hint {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.login-code-highlight {
+  color: var(--cyan);
+  background: var(--cyan-dim);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.login-code-warning {
+  color: var(--amber);
+  background: var(--amber-dim);
+  padding: 1px 5px;
+  border-radius: 4px;
+}

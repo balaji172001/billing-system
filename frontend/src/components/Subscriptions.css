@@ -1,0 +1,37 @@
+/* Subscriptions Component Styles */
+.subscriptions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.subscriptions-th-actions {
+  text-align: right;
+}
+
+.subscriptions-title {
+  font-weight: 600;
+}
+
+.subscriptions-amount {
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+.subscriptions-text-secondary {
+  color: var(--text-secondary);
+}
+
+.subscriptions-text-muted {
+  color: var(--text-muted);
+}
+
+.subscriptions-actions-cell {
+  justify-content: flex-end;
+}
+
+.subscriptions-trigger-spinner {
+  width: 12px;
+  height: 12px;
+  border-width: 2px;
+}
