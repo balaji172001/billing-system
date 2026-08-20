@@ -3,28 +3,28 @@ import Company from '../models/Company.js';
 
 const router = express.Router();
 
-// Get company profile settings (or create/return default)
+// Get company profile settings
 router.get('/', async (req, res) => {
   try {
     let company = await Company.findOne();
     if (!company) {
-      // Create a default company settings if none exists
-      company = await Company.create({
-        name: 'My Business Name',
-        address: '123 Business Rd, City, Country',
-        email: 'billing@mybusiness.com',
-        phone: '+1 555-0199',
-        taxNumber: 'GST-9999999',
+      // Return clean empty structure without static mock defaults
+      return res.json({
+        name: '',
+        address: '',
+        email: '',
+        phone: '',
+        taxNumber: '',
         currency: 'USD',
         invoicePrefix: 'INV-',
-        defaultTaxRate: 10,
+        defaultTaxRate: 0,
         bankDetails: {
-          bankName: 'SaaS Bank',
-          accountNumber: '1234567890',
-          ifscOrSwift: 'SAASUS33',
-          accountName: 'My Business Accounts'
+          bankName: '',
+          accountNumber: '',
+          ifscOrSwift: '',
+          accountName: '',
         },
-        termsAndConditions: 'Payment is due within invoice due terms. Thank you for your business!'
+        termsAndConditions: '',
       });
     }
     res.json(company);
